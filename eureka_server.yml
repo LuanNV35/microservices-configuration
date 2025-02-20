@@ -1,22 +1,22 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "health,refresh"
-  health:
-    readiness-state:
-      enabled: true
-    liveness-state:
-      enabled: true
-  endpoint:
-    health:
-      probes:
-        enabled: true
-  metrics:
-    enable:
-      system.cpu.count: false
-      system.cpu.usage: false
-      process.cpu.usage: false
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "health,refresh"
+#  health:
+#    readiness-state:
+#      enabled: true
+#    liveness-state:
+#      enabled: true
+#  endpoint:
+#    health:
+#      probes:
+#        enabled: true
+#  metrics:
+#    enable:
+#      system.cpu.count: false
+#      system.cpu.usage: false
+#      process.cpu.usage: false
 server:
   port: 8761
 eureka:
